@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title th:text=Home page></title>
+    <link rel="stylesheet" href="../css/style.css" th:href="@{/css/style.css}">
+</head>
+<body>
+<nav>
+    <ul class="nav-bar">
+        <li class="nav-link"><img src="../static/img/progress_image_13_c2b5514a-b86d-4b76-98e0-a2798826ef99.webp" width="50px" height="50px" th:src="@{img/progress_image_13_c2b5514a-b86d-4b76-98e0-a2798826ef99.webp}"/></li>
+        <li class="nav-link"><a href="/index">Index</a></li>
+        <li class="nav-link"><a href="/about">About</a></li>
+    </ul>
+</nav>
+<div class = "container">
+    <p th:text="'Welcome '+${guest_name}">
+
+</div>
+</body>
+</html>
